@@ -13,13 +13,13 @@ def midpoint(ptA, ptB):
 	return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
 
 # 进行参数配置和解析
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True, help="path to the input image")
-ap.add_argument("-w", "--width", type=float, required=True, help="width of the left-most object in the image (in inches)")
-args = vars(ap.parse_args())
+# ap = argparse.ArgumentParser()
+# ap.add_argument("-i", "--image", required=True, help="path to the input image")
+# ap.add_argument("-w", "--width", type=float, required=True, help="width of the left-most object in the image (in inches)")
+# args = vars(ap.parse_args())
 
 # 读取图片
-image = cv2.imread(args["image"])
+image = cv2.imread("shapeandcolor.png")
 # 执行灰度变换
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # 执行高斯滤波
@@ -67,8 +67,8 @@ for c in cnts:
 		(trbrX, trbrY) = midpoint(tr, br)
 
 		# 计算中心点之间的欧式距离
-        D = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
-        # 获取计算结果
+		D = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
+		# 获取计算结果
 		refObj = (box, (cX, cY), D / args["width"])
 		continue
 
