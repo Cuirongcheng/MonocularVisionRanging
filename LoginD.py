@@ -8,6 +8,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QLineEdit
 
 
 class Ui_Dialog(object):
@@ -39,6 +40,7 @@ class Ui_Dialog(object):
         font.setPointSize(14)
         self.editpwd.setFont(font)
         self.editpwd.setObjectName("editpwd")
+        self.editpwd.setEchoMode(QLineEdit.Password)
         self.labpwd = QtWidgets.QLabel(Dialog)
         self.labpwd.setGeometry(QtCore.QRect(250, 290, 54, 21))
         font = QtGui.QFont()

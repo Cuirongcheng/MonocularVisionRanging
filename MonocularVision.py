@@ -707,3 +707,5 @@ if __name__ == "__main__":
     # def changeUname(uname,upwd):
     #     print(uname,upwd)
     #     ui.lhello_2.setText(uname)
+
+    sys.exit(app.exec_())

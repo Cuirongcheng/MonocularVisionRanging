@@ -40,7 +40,7 @@ class MyMainWindows(QMainWindow, Ui_MainWindow):   #新建一个类  Ui_MainWind
     def l11openCam(self):
         self.timer_camera = QtCore.QTimer()  # 定义定时器，用于控制显示视频的帧率
         self.cap = cv2.VideoCapture()  # 视频流
-        self.CAM_NUM = 0  # 为0时表示视频流来自笔记本内置摄像头,外部摄像头为1,2，...
+        self.CAM_NUM = 1  # 为0时表示视频流来自笔记本内置摄像头,外部摄像头为1,2，...
         if self.timer_camera.isActive() == False:  # 若定时器未启动
             flag = self.cap.open(self.CAM_NUM)  # 参数是0，表示打开笔记本的内置摄像头，参数是视频文件路径则打开视频
             if flag == False:  # flag表示open()成不成功
