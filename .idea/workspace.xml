@@ -42,11 +42,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MainMenuController">
+  <component name="RunManager" selected="Python.createBoard">
     <configuration name="LoginDC" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MonocularVisionRanging" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -66,6 +69,9 @@
       <module name="MonocularVisionRanging" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -104,6 +110,9 @@
       <module name="MonocularVisionRanging" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -141,20 +150,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testMysqlImg" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="createBoard" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MonocularVisionRanging" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testMysqlImg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/createBoard.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.createBoard" />
         <item itemvalue="Python.MainMenuController" />
         <item itemvalue="Python.LoginDC" />
         <item itemvalue="Python.LoginWC" />
         <item itemvalue="Python.MonocularVision" />
-        <item itemvalue="Python.testMysqlImg" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +202,8 @@
       <workItem from="1575887613120" duration="636000" />
       <workItem from="1575991942236" duration="602000" />
       <workItem from="1576218328419" duration="3197000" />
+      <workItem from="1577440698716" duration="2000" />
+      <workItem from="1577760097369" duration="3124000" />
     </task>
     <servers />
   </component>
