@@ -28,7 +28,6 @@ image = cv2.imread('shapeandcolor.png')
 # 进行裁剪操作
 resized = imutils.resize(image, width=300)
 ratio = image.shape[0] / float(resized.shape[0])
-
 # 进行高斯模糊操作
 blurred = cv2.GaussianBlur(resized, (5, 5), 0)
 # 进行图片灰度化
@@ -38,7 +37,6 @@ lab = cv2.cvtColor(blurred, cv2.COLOR_BGR2LAB)
 # 进行阈值分割
 thresh = cv2.threshold(gray, 60, 255, cv2.THRESH_BINARY)[1]
 cv2.imshow("Thresh", thresh)
-
 # 在二值图片中寻找轮廓
 cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 cnts = imutils.grab_contours(cnts)

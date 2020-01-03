@@ -20,6 +20,8 @@ def midpoint(ptA, ptB):
 
 # 读取图片
 image = cv2.imread("shapeandcolor.png")
+sp = image.shape
+width = sp[1]
 # 执行灰度变换
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # 执行高斯滤波
@@ -69,7 +71,7 @@ for c in cnts:
 		# 计算中心点之间的欧式距离
 		D = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
 		# 获取计算结果
-		refObj = (box, (cX, cY), D / args["width"])
+		refObj = (box, (cX, cY), D / width)
 		continue
 
 	# 绘制轮廓
@@ -96,3 +98,4 @@ for c in cnts:
 		# 显示结果
 		cv2.imshow("Image", orig)
 		cv2.waitKey(0)
+cv2.destroyAllWindows()
