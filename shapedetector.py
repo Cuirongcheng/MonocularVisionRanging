@@ -11,7 +11,6 @@ class ShapeDetector:
         shape = "unidentified"
         peri = cv2.arcLength(c, True)
         approx = cv2.approxPolyDP(c, 0.04 * peri, True)
-
         # 如果当前的轮廓含有3个顶点，则其为三角形
         if len(approx) == 3:
             shape = "triangle"
