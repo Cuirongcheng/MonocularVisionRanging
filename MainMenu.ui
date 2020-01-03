@@ -263,7 +263,7 @@ background-color: rgb(0, 0, 0);</string>
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>形状检测</string>
+     <string>形状识别</string>
     </property>
    </widget>
    <widget class="QPushButton" name="l32Depth">
@@ -291,7 +291,7 @@ background-color: rgb(0, 0, 0);</string>
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>深度估计</string>
+     <string>轮廓显示</string>
     </property>
    </widget>
    <widget class="QPushButton" name="l22Color">
@@ -319,7 +319,7 @@ background-color: rgb(0, 0, 0);</string>
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>颜色检测</string>
+     <string>颜色识别</string>
     </property>
    </widget>
    <widget class="QLabel" name="l3DistanceMeasure">

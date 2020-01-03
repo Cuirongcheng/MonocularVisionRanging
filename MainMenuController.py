@@ -5,6 +5,7 @@ import os
 import shutil
 from shapedetector import ShapeDetector
 from colorlabeler import ColorLabeler
+import testDistanceOfCircle
 import argparse
 import imutils
 
@@ -203,10 +204,19 @@ class MyMainWindows(QMainWindow, Ui_MainWindow):   #新建一个类  Ui_MainWind
             self.lImg1.setPixmap(QtGui.QPixmap.fromImage(self.showImage))  # 往显示视频的Label里 显示QImage
 
     def l32depth(self):
-        self.lResult.setText("双目视觉利用视差形成深度图功能比较完善，单目深度估计功能开发中，敬请期待……")
+        self.KNOWN_DISTANCE = 16  # 这个距离自己实际测量一下
+        self.KNOWN_WIDTH = 4  # 水果的高度
+        self.KNOWN_HEIGHT = 4
+        image = cv2.imread(self.imgName)
+        marker = testDistanceOfCircle.find_marker(image)
 
     def l33distance(self):
-        self.lResult.setText("单目测距功能开发中，敬请期待……")
+        # image = cv2.imread(self.imgName)
+        # focalLength = testDistanceOfCircle.calculate_focalDistance(image)
+        # testDistanceOfCircle.calculate_Distance(image, focalLength)
+        # cv2.waitKey(0)
+        self.lResult.setText("程序调试中……")
+
 
 if __name__ == "__main__":
     #所有的PyQt5应用必须创建一个应用（Application）对象。
